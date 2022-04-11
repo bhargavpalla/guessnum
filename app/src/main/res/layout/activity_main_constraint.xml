@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textview_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/margin_top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="@dimen/text_size"
+        tools:text="question" />
+
+    <ImageButton
+        android:id="@+id/img_up"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/reset"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/img_success"
+        android:layout_marginRight="@dimen/margin"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        android:layout_marginBottom="@dimen/margin"
+        android:onClick="upward"
+        android:src="@drawable/upward_arrow">
+
+    </ImageButton>
+    <ImageButton
+        android:id="@+id/img_success"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="success"
+        app:layout_constraintBottom_toTopOf="@+id/reset"
+        app:layout_constraintLeft_toRightOf="@+id/img_up"
+        app:layout_constraintRight_toLeftOf="@+id/img_down"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:src="@drawable/success">
+    </ImageButton>
+    <ImageButton
+        android:id="@+id/img_down"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/reset"
+        app:layout_constraintLeft_toRightOf="@+id/img_success"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:layout_marginRight="@dimen/margin"
+        android:onClick="downward"
+        android:src="@drawable/downward_arrow">
+
+    </ImageButton>
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_ht"
+        android:text="@string/reset"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:onClick="resetfun"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:layout_margin="@dimen/margin">
+    </Button>
+    <TextView
+        android:id="@+id/target_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Your number is"
+        android:layout_margin="@dimen/margin"
+        app:layout_constraintBottom_toTopOf="@+id/img_success"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:textSize="@dimen/text_size"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/textview_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/target_num"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/target_num"
+        android:textColor="@color/green"
+        android:textSize="@dimen/text_size"
+        tools:text="Success" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

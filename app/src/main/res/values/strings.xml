@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">find_num</string>
+    <string name="reset">Reset</string>
+    <string name="first_qsn">Is your number 5?</string>
+    <string name="second_qsn">Is your number 3?</string>
+    <string name="third_qsn">Is your number 2?</string>
+    <string name="fourth_qsn">Is your number 1?</string>
+    <string name="fifth_qsn">Is your number 4?</string>
+    <string name="sixth_qsn">Is your number 7?</string>
+    <string name="seventh_qsn">Is your number 9?</string>
+    <string name="eigth_qsn">Is your number 10?</string>
+    <string name="ninth_qsn">Is your number 8?</string>
+    <string name="tenth_qsn">Is your number 6?</string>
+    <string name="target_num">Your number is %d</string>
+    <string name="success">Success</string>
+
+</resources>
